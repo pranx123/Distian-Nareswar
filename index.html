@@ -42,7 +42,7 @@
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo-img">
                                 <a href="index.html">
-                                    <img src="img/logo.png" height="50" width="100" alt="">
+                                 
                                 </a>
                             </div>
                         </div>
@@ -56,36 +56,16 @@
         </div>
     </header>
 
-    <!-- attend_area -->
-    <div class="attending_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
-                    <div class="main_attending_area">
-                        <div class="flower_1 d-none d-lg-block">
-                            <img src="img/appointment/flower-top.png" alt="">
-                        </div>
-                        <div class="flower_2 d-none d-lg-block">
-                            <img src="img/appointment/flower-bottom.png" alt="">
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-xl-7 col-lg-8">
-                                <div class="popup_box ">
-                                    <div class="popup_inner">
-                                        <div class="form_heading text-center">
-                                            <h3>Om Susatiastu</h3>
-                                            <p></p>
-                                        </div>
-                                        <form action="home.html">
-                                          
-                                           <button type="submit" class="button button-contactForm boxed-btn">Buka Undangan</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="slider_area ">
+        <div class="slider_area_inner overlay2">
+            <div class="slider_text text-center">
+                <div class="text_inner">
+                    <img src="img/banner/ornaments.png" alt="">
+
+                    <h4></h4>
+                    <h3>Om Suastiastu<br>
+                        <p id="date"></p></h3>
+                    <span><a href="home.html">BUKA UNDANGAN</a> </span>
                 </div>
             </div>
         </div>
@@ -126,6 +106,12 @@
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;</script>
 
     <script>
         $('#clock').countdown('2022/04/17', function (event) {
